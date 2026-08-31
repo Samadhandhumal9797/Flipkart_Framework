@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: tests.MultipleProductDataDriven_TestCase
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 26.72 s -- in tests.MultipleProductDataDriven_TestCase
