@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.FlipkartTest">
+      <class name="selenium_practise_code.switchToWindow">
         <methods>
-          <include name="setup"/>
-          <include name="tearDown"/>
-          <include name="searchProductsTest" invocation-numbers="1 2 3"/>
+          <include name="windowHandling"/>
         </methods>
-      </class> <!-- tests.FlipkartTest -->
+      </class> <!-- selenium_practise_code.switchToWindow -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -28,7 +28,7 @@ public class FlipkartTest extends BaseTest{
     	
    // @Parameters("productName") 
 	@Test(dataProvider="productData")
-	public void searchProductsTest(String productName) throws InterruptedException {              //Most Important even if we call methods we need test case name and a new mehod for verification***
+	 public void searchProductsTest(String productName) throws InterruptedException {              //Most Important even if we call methods we need test case name and a new method for verification***
 		
 		HomePage hp= new HomePage(driver);
 		

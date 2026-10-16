@@ -1,4 +1,38 @@
 -------------------------------------------------------------------------------
 Test set: tests.MultipleProductDataDriven_TestCase
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 26.72 s -- in tests.MultipleProductDataDriven_TestCase
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 2.844 s <<< FAILURE! -- in tests.MultipleProductDataDriven_TestCase
+tests.MultipleProductDataDriven_TestCase.searchMultipleProducts(java.lang.String) -- Time elapsed: 2.745 s <<< ERROR!
+java.lang.RuntimeException: java.lang.NullPointerException: Cannot invoke "org.apache.poi.ss.usermodel.Cell.toString()" because the return value of "org.apache.poi.ss.usermodel.Row.getCell(int)" is null
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:57)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:157)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:812)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:737)
+	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:915)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+Caused by: java.lang.NullPointerException: Cannot invoke "org.apache.poi.ss.usermodel.Cell.toString()" because the return value of "org.apache.poi.ss.usermodel.Row.getCell(int)" is null
+	at utilities.ExcelUtil.getExcelData(ExcelUtil.java:32)
+	at tests.MultipleProductDataDriven_TestCase.getPrductData(MultipleProductDataDriven_TestCase.java:21)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:53)
+	... 22 more
+

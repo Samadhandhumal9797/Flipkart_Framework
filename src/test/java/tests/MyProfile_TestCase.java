@@ -9,7 +9,11 @@ import pages.LoginPage;
 
 public class MyProfile_TestCase extends BaseTest{
 
-	@Test
+	@Test(priority=1, groups="regression")
+	public void LoginTest() {
+		System.out.println("Login Successfull");	}
+	
+	@Test(priority=1, groups="regression")
 	public void myProfileVerification() {
 		
 		HomePage hp= new HomePage(driver);
@@ -22,5 +26,14 @@ public class MyProfile_TestCase extends BaseTest{
 		
 		boolean result= lp.errorMessagedisplayed();
 		Assert.assertEquals(result, true);
+		
+	    System.out.println("Profile Verified");
+	}
+	
+	@Test(priority=3, groups="regression")
+	public void LogoutTest() {
+		System.out.print("Logout Test Started");
+		
+		Assert.assertTrue(false);
 	}
 }

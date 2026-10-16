@@ -1,4 +1,4 @@
-package base;
+ package base;
 
 import java.time.Duration;
 
@@ -20,7 +20,7 @@ public class BaseTest {                                                         
    
 	@Parameters("browser")
 	@BeforeClass
-	public void setup(@Optional("chrome")String browser) {                                   // launch browser
+	public void setup (@Optional("chrome")String browser) {                                   // launch browser
 		
 		if(browser.equalsIgnoreCase("chrome")) {
 			

@@ -15,7 +15,7 @@ public class CartPage {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath= "//*[contains(text(),'Apple iPhone 16') and (@class='css-146c3p1 r-dnmrzs r-1udh08x r-1udbk01 r-3s2u2q r-1iln25a r-cqee49 r-1et8rh5 r-ubezar')]")
+	@FindBy(xpath= "//div[starts-with(text(),'Apple')]")
 	WebElement iPhone16;
 
 	

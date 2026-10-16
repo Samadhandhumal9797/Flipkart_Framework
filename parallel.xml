@@ -3,7 +3,8 @@
 <suite name="Suite" parallel="tests" thread-count="2">
 
   <test name="chrome">
-  <parameter name="browser" value="chrome"></parameter>
+  <parameter name="browser" value="chrome">
+  </parameter>
     <classes>
       <class name="tests.MyProfile_TestCase"/>
     </classes>

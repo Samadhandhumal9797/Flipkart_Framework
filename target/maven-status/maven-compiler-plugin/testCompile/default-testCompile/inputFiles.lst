@@ -7,10 +7,17 @@ C:\Automation\Selenium\MyWorkspace\FlipKart_Framework\src\test\java\pages\LoginP
 C:\Automation\Selenium\MyWorkspace\FlipKart_Framework\src\test\java\pages\PracticeSelenium.java
 C:\Automation\Selenium\MyWorkspace\FlipKart_Framework\src\test\java\pages\ProductPage.java
 C:\Automation\Selenium\MyWorkspace\FlipKart_Framework\src\test\java\pages\SearchPage.java
+C:\Automation\Selenium\MyWorkspace\FlipKart_Framework\src\test\java\selenium_practise_code\TakeScreenShotMethod.java
+C:\Automation\Selenium\MyWorkspace\FlipKart_Framework\src\test\java\tests\DataPovider_TestCase.java
 C:\Automation\Selenium\MyWorkspace\FlipKart_Framework\src\test\java\tests\FlipkartTest.java
+C:\Automation\Selenium\MyWorkspace\FlipKart_Framework\src\test\java\tests\For_ondependsmethod_TestCase.java
+C:\Automation\Selenium\MyWorkspace\FlipKart_Framework\src\test\java\tests\Grouping_TestCase.java
+C:\Automation\Selenium\MyWorkspace\FlipKart_Framework\src\test\java\tests\MultipleProduct_DDT_TestCase.java
 C:\Automation\Selenium\MyWorkspace\FlipKart_Framework\src\test\java\tests\MultipleProductDataDriven_TestCase.java
 C:\Automation\Selenium\MyWorkspace\FlipKart_Framework\src\test\java\tests\MyProfile_TestCase.java
+C:\Automation\Selenium\MyWorkspace\FlipKart_Framework\src\test\java\tests\ParametersFromXML_TestCase.java
 C:\Automation\Selenium\MyWorkspace\FlipKart_Framework\src\test\java\tests\ScreenshotOnFailure.java
 C:\Automation\Selenium\MyWorkspace\FlipKart_Framework\src\test\java\tests\ScrollToElement_TestCase.java
 C:\Automation\Selenium\MyWorkspace\FlipKart_Framework\src\test\java\utilities\ExcelUtil.java
+C:\Automation\Selenium\MyWorkspace\FlipKart_Framework\src\test\java\utilities\ExtentReportManager.java
 C:\Automation\Selenium\MyWorkspace\FlipKart_Framework\src\test\java\utilities\ScreenshotUtil.java

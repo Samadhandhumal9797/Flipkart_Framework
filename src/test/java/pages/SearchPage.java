@@ -19,8 +19,8 @@ public class SearchPage {
 	}
 	
 	
-	@FindBy(xpath="//*[starts-with(@href,'/apple-iphone-16-white-128-gb')]")
-	WebElement iphone;
+	@FindBy(xpath="//*[starts-with(@class,'RG5Slk')]")
+	List <WebElement> iphones;
 	
 	@FindBy(xpath="//span[normalize-space()='Yes']")
 	WebElement buttonYes;
@@ -46,7 +46,14 @@ public class SearchPage {
 		
 		// String parentWindow = driver.getWindowHandle();
 		 
-		iphone.click();
+		for(int i=0; i<iphones.size();i++) {
+			
+			if(i==1) {
+				iphones.get(i).click();
+				break;
+			}
+		}
+		
 		
 		for (String window : driver.getWindowHandles()) {
 		    driver.switchTo().window(window);

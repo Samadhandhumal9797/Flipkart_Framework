@@ -9,12 +9,37 @@ import org.openqa.selenium.io.FileHandler;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+
 import base.BaseTest;
+import utilities.ExtentReportManager;
 
 public class TestListeners implements ITestListener {
-
+	
+	//Create ExtentReport instance
+	ExtentReports extent = ExtentReportManager.getReportInstance();  //here we are directly calling a method from ExtentReportManager class because method is STATIC
+    
+	//Represent individual test
+	ExtentTest test;                                               //Import it
+	
+	
+	public void onTestStart(ITestResult result) {
+		
+		//create a test in ExtentReport
+		test= extent.createTest(result.getName());
+	}
+	
+	public void onTestSuccess(ITestResult result) {
+		test.pass("Test Passed");
+	}
+	
+    
 	public void onTestFailure(ITestResult result) {
 		
+		
+		//Create test for extent report on failure
+		test.fail(result.getThrowable());
 		
 		//Getting driver from BaseTest
 		TakesScreenshot ts= (TakesScreenshot) BaseTest.driver;
@@ -35,6 +60,10 @@ public class TestListeners implements ITestListener {
 	                    "Screenshot saved at: "
 	                    + destination.getAbsolutePath()
 	            );
+	            
+	            
+	            // to attach screenshot to Extent Report
+	            test.addScreenCaptureFromPath(destination.getAbsolutePath());
 
 	        } catch (IOException e) {
 
@@ -42,5 +71,17 @@ public class TestListeners implements ITestListener {
 	        }
 	}
     
+	public void onTestSkipped(ITestResult result) {
+		test.skip("Test Skipped");
+	}
+	
+	 @Override
+	    public void onFinish(org.testng.ITestContext context) {
+
+	        // Generate the HTML report
+	        extent.flush();
+	 }
+	
+	
     
 }
